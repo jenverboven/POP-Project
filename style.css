@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #DFF2F2;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    text-align: center;
+}
+
+section:nth-child(even) {
+    background-color: #F2C791;
+}
+
+#massages li {
+    list-style-position: inside;
+    list-style-type: circle;
+}
+
+nav li:hover {
+    font-weight: bold;
+}
+
+h2 {
+    display: inline-block;
+    border-bottom: 1px solid black;
+}
+
+.navbar-light {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #DFF2F2 !important;
+}
+
+.btn-primary {
+    color: black;
+    background-color: #05C7F2;
+    border-color: #05C7F2;
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: #3F83BF;
+    border-color: #3F83BF;
+}
+
+.btn-primary:active {
+    background-color: #3F83BF;
+    border-color: #3F83BF;
+}
+
+.btn-primary:focus {
+    background-color: #3F83BF;
+    border-color: #3F83BF;
+}
+
+.card-body {
+    background-color: #F2C791;
+    border: none;
+}
+
+#higlight {
+    font-weight: bold;
+}
+
+#zaak img {
+    max-width: 100%;
+    border-bottom: 2px solid #DFF2F2;
+}
+
+#zaak img:first-child {
+    max-width: 100%;
+    border-top: 2px solid #DFF2F2;
+}
+
+img {
+    max-width: 100%;
+}
+
+#bgis {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(Images/olie.jpg) fixed center center;
+    background-size: cover;
+    padding: 150px 0;
+}
+
+.navbar-collapse {
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 768px) {
+    .container-md {
+        max-width: 950px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #bgis {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(Images/olie.jpg) fixed center center;
+        background-size: cover;
+        padding: 200px 0;
+    }
+
+    .container-lg,
+    .container-xl,
+    .container-md {
+        max-width: 950px;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: space-around;
+    }
+
+    #foto1 {
+        max-width: 100%;
+    }
+
+    #foto2 {
+        max-width: 100%;
+    }
+
+    #foto3 {
+        width: 100%;
+        height: 639px;
+        object-fit: cover;
+        border-left: 2px solid #DFF2F2;
+    }
+
+    #zaak p {
+        border: none;
+    }
+}
